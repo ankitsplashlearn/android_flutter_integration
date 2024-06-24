@@ -40,9 +40,9 @@ class MyFlutterActivity : FlutterActivity() {
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).invokeMethod("receiveInitialData", initialData)
     }
 
-//    override fun provideFlutterEngine(context: Context): FlutterEngine? {
-//        return FlutterEngineCache.getInstance().get("my_engine_id")
-//    }
+    override fun provideFlutterEngine(context: Context): FlutterEngine? {
+        return FlutterEngineCache.getInstance().get("my_engine_id1")
+    }
 
     companion object {
         fun withInitialData(context: Context, initialData: String): Intent {
