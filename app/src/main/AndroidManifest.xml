@@ -12,18 +12,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NativeAndroidUsingFlutter"
         tools:targetApi="31">
+
+        <!-- Splash Activity - Initial Launch Screen -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.NativeAndroidUsingFlutter">
+            android:theme="@style/Theme.NativeAndroidUsingFlutter"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MyFlutterActivity"/>
+        <!-- Home Activity - Main Dashboard -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NativeAndroidUsingFlutter"
+            android:screenOrientation="portrait"/>
+
+        <!-- Profile Activity - User Profile -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NativeAndroidUsingFlutter"
+            android:screenOrientation="portrait"/>
+
+        <!-- Original MainActivity - kept for reference -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NativeAndroidUsingFlutter"/>
+
+        <!-- Flutter Activity -->
+        <activity
+            android:name=".MyFlutterActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

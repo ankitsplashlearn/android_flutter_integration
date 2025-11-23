@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/../flutter_android_integration/.android/Flutter" />
+            <option value="$PROJECT_DIR$/../flutter_rive_project/.android/Flutter" />
           </set>
         </option>
       </GradleProjectSettings>

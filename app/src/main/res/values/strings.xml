@@ -6,6 +6,34 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- Splash Screen -->
+    <string name="app_logo">App Logo</string>
+    <string name="splash_tagline">Flutter Integration App</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Home</string>
+    <string name="welcome_message">Welcome Back!</string>
+    <string name="flutter_module">Flutter Module</string>
+    <string name="flutter_description">Launch Flutter module with Rive animation</string>
+    <string name="profile_title">My Profile</string>
+    <string name="profile_description">View and edit your profile information</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_description">Manage app settings and preferences</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_image">Profile Image</string>
+    <string name="user_name">John Doe</string>
+    <string name="user_email">john.doe@example.com</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="phone_label">Phone</string>
+    <string name="phone_value">+1 234 567 8900</string>
+    <string name="location_label">Location</string>
+    <string name="location_value">San Francisco, CA</string>
+    <string name="member_since_label">Member Since</string>
+    <string name="member_since_value">November 2025</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
