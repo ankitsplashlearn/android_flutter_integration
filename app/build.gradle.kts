@@ -50,6 +50,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    debugImplementation ("com.example.flutter_demo_module:flutter_debug:1.0")
-    releaseImplementation ("com.example.flutter_demo_module:flutter_release:1.0")
+    // Flutter module integration
+    implementation(project(":flutter"))
 }

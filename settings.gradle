@@ -11,22 +11,26 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
 
-        maven (
-            url = "/Users/ankitmaurya/AndroidStudioProjects/flutter_demo_module/build/host/outputs/repo"
-        )
-
-        maven (
-            url = "https://storage.googleapis.com/download.flutter.io"
-        )
+        // Flutter SDK repository
+        maven {
+            url "https://storage.googleapis.com/download.flutter.io"
+        }
     }
 }
 
 rootProject.name = "NativeAndroidUsingFlutter"
-include(":app")
- 
+include ':app'
+
+// Include Flutter module from sibling directory
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'flutter_android_integration/.android/include_flutter.groovy'
+))
